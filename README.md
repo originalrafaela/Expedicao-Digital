@@ -1,6 +1,6 @@
 # Expedição Digital
 
-Site multipagina para um guia aberto de internet básica para todas as idades, com pagina inicial, cards de cursos, foto, texto e sumario por curso.
+Site multipágina para um guia aberto de internet básica para todas as idades, com página inicial, cards de cursos, tópicos de leitura, orientações passo a passo e sumário por curso.
 
 ## Stack escolhida
 

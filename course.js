@@ -114,7 +114,7 @@ function renderCoursePage() {
           <img src="${course.image_url}" alt="">
           <div>
             <h3>Antes de começar</h3>
-            <p>Use este curso como consulta. Leia um tópico por vez, veja a imagem quando houver e repita o passo no seu próprio aparelho, sem pressa.</p>
+            <p>Use este curso como consulta. Leia um tópico por vez e siga as orientações no seu próprio aparelho, sem pressa.</p>
           </div>
         </section>
 
