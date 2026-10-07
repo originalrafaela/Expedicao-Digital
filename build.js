@@ -10,3 +10,4 @@ for (const file of publicFiles) {
   fs.copyFileSync(path.join(__dirname, file), destination);
 }
 console.log("Arquivos públicos preparados em dist/ para hospedagem estática.");
+fs.copyFileSync(path.join(__dirname, "_headers"), path.join(__dirname, "dist", "_headers"));

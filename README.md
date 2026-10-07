@@ -36,6 +36,7 @@ Execute `npm run build` e publique o conteúdo da pasta `dist/`. O projeto não 
 - Não configure redirecionamento de todas as rotas para `index.html`: os cursos são páginas HTML independentes.
 - Habilite HTTPS no provedor. A página 404 pressupõe publicação na raiz do domínio.
 - Publique somente `dist/`, para não expor arquivos internos.
+- O build inclui `_headers`, que configura os cabeçalhos de segurança no Cloudflare Pages. Esse arquivo é interpretado pela hospedagem e não executa o servidor Node. Outros provedores precisam de uma configuração equivalente.
 
 ## Deploy com Node
 
