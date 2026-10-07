@@ -1,57 +1,23 @@
 # Expedição Digital
 
-Site multipágina para um guia aberto de internet básica para todas as idades, com página inicial, cards de cursos, tópicos de leitura, orientações passo a passo e sumário por curso.
+[Acesse o site](https://expedicao-digital.pages.dev/)
 
-## Stack escolhida
+Projeto de Extensão desenvolvido para o curso de Ciência da Computação da Universidade Paulista — Paraíso.
 
-- HTML, CSS e JavaScript puro para carregar rapido e nao depender de build.
-- Conteúdo local em `courses-data.js`, sem banco de dados e sem cadastro.
-- Cada card abre uma pagina propria em `cursos/`.
-- Cada curso tem sumario lateral recolhivel.
-- Cada titulo do texto vira um topico clicavel no sumario.
+O Expedição Digital é um guia aberto e gratuito para ajudar pessoas de todas as idades a usar computador, celular e serviços digitais com mais autonomia e segurança.
 
-## Como abrir
+## O que você encontra
 
-Com servidor local:
+São 20 cursos com tópicos de leitura, explicações simples e orientações passo a passo. Os temas incluem primeiros passos no computador e no celular, internet, e-mail, WhatsApp, segurança digital, bancos, Pix e serviços públicos.
 
-```powershell
-npm start
-```
+Os cursos estão organizados por tipo de aparelho e possuem sumário para facilitar a consulta. O site pode ser acessado pelo computador ou celular, sem cadastro.
 
-Depois abra `http://localhost:4173`.
+## Autores
 
-Tambem e possivel abrir `index.html` diretamente no navegador.
-
-## Como editar conteudo
-
-Edite o array `courses` em `courses-data.js`. Cada curso tem `slug`, `label`, textos principais e uma lista `topics` com os topicos do artigo.
-
-## Deploy estático
-
-Execute `npm run build` e publique o conteúdo da pasta `dist/`. O projeto não precisa de dependências nem de servidor Node em uma hospedagem estática.
-
-- Comando de build: `npm run build`.
-- Diretório de publicação: `dist`.
-- Configure a hospedagem para usar `404.html` como página de erro com status HTTP 404.
-- Não configure redirecionamento de todas as rotas para `index.html`: os cursos são páginas HTML independentes.
-- Habilite HTTPS no provedor. A página 404 pressupõe publicação na raiz do domínio.
-- Publique somente `dist/`, para não expor arquivos internos.
-- O build inclui `_headers`, que configura os cabeçalhos de segurança no Cloudflare Pages. Esse arquivo é interpretado pela hospedagem e não executa o servidor Node. Outros provedores precisam de uma configuração equivalente.
-
-## Deploy com Node
-
-Use Node 22 ou superior e o comando `npm start`. O servidor respeita a variável `PORT` da hospedagem, serve somente arquivos públicos e trata URLs inválidas sem encerrar o processo. Configure HTTPS no provedor ou proxy.
-
-## Verificação
-
-Execute `npm test` para conferir arquivos públicos, URLs inválidas, bloqueio de arquivos internos, página 404 e métodos HTTP.
-
-Execute `node tests/browser-check.js` para testar os 20 cursos, imagens, títulos, filtros e rolagem em larguras de computador e celular. Esse teste requer Chrome instalado; para outro caminho de Chrome ou Edge, defina `CHROME_PATH`. Usa um perfil temporário separado e não acessa o perfil pessoal. A opção `--no-sandbox` aplica-se apenas ao navegador de teste em páginas locais.
-
-A imagem original está preservada em `assets/hero-expedicao.png`. A página e o pacote de deploy usam a versão JPEG otimizada.
+- Rafaela Amaral
+- Guilherme Nunes
+- Luan Rocha
 
 ## Licença
 
-Código disponibilizado sob a licença [MIT](LICENSE).
-Autoria: Rafaela Amaral, Guilherme Nunes e Luan Rocha.
-
+O código do projeto está disponível sob a licença [MIT](LICENSE).
