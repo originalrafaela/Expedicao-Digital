@@ -362,6 +362,12 @@ h3 {
 }
 
 .course-card strong {
+  padding: 12px;
+  border-left: 4px solid var(--teal);
+  border-radius: 4px;
+  color: var(--ink);
+  background: var(--sage);
+  font-weight: 900;
   font-size: 1.15rem;
   line-height: 1.18;
   overflow-wrap: break-word;
@@ -610,6 +616,8 @@ h3 {
 }
 
 .basic-title-block h1 {
+  color: var(--teal-dark);
+  font-weight: 900;
   font-size: clamp(1.9rem, 4.4vw, 3.45rem);
 }
 

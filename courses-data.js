@@ -18,7 +18,8 @@ function courseArt(title, accent, icon) {
       <circle cx="260" cy="46" r="52" fill="#ffffff" opacity=".18"/>
       <circle cx="42" cy="190" r="78" fill="#ffffff" opacity=".12"/>
       ${icons[icon]}
-      <text x="26" y="198" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">${title}</text>
+      <rect x="0" y="178" width="320" height="42" fill="#17212b"/>
+      <text x="20" y="205" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">${title}</text>
     </svg>
   `;
 
