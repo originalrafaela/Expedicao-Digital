@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expedição Digital | Curso de Internet e Mundo Digital</title>
+    <meta
+      name="description"
+        content="Guia aberto para pessoas de todas as idades aprenderem internet, celular, segurança digital, comunicação online e serviços digitais com calma e prática."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Expedição Digital">
+        <span class="brand-mark">ED</span>
+        <span>Expedição Digital</span>
+      </a>
+
+      <nav class="top-nav" aria-label="Navegação principal">
+        <a href="#modulos">Cursos</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <img
+          src="assets/hero-expedicao.jpg"
+          width="1693" height="929" fetchpriority="high"
+          alt="Pessoas de diferentes idades aprendendo a usar internet, celular e computador"
+        />
+        <div class="hero-overlay">
+          <p class="eyebrow">Guia aberto e gratuito</p>
+          <h1 id="hero-title">Expedição Digital - Internet para todos</h1>
+          <p>
+            Um guia com fotos, textos simples e passos práticos para qualquer pessoa aprender a usar celular, internet, aplicativos e serviços digitais com mais segurança.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#modulos">Começar pelo guia</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Resumo do curso">
+        <div>
+          <strong>Aberto</strong>
+          <span>Cursos gratuitos para aprender no seu ritmo</span>
+        </div>
+        <div>
+          <strong>Objetivo</strong>
+          <span>Disponibilizar conhecimento base para navegar na Internet e aplicativos</span>
+        </div>
+        <div>
+          <strong>Conteúdo</strong>
+          <span>Conteúdo claro, simples e objetivo</span>
+        </div>
+        <div>
+          <strong>20 instruções</strong>
+          <span>Temas práticos sobre computador, celular, redes sociais, bancos e serviços</span>
+        </div>
+      </section>
+
+      <section class="section-shell" id="modulos">
+        <div class="section-heading">
+          <p class="eyebrow">Guia por temas</p>
+          <h2>Cursos do guia</h2>
+          <p>
+            Cada curso funciona como uma página de consulta: explicação curta,
+            imagem de referência e lista do que a pessoa consegue fazer ao
+            final.
+          </p>
+        </div>
+
+        <div class="tabs" role="group" aria-label="Cursos separados por tipo de aparelho">
+          <button class="tab-button active" type="button" data-course-filter="computador" aria-pressed="true">PC</button>
+          <button class="tab-button" type="button" data-course-filter="celular" aria-pressed="false">Celular</button>
+        </div>
+
+        <div class="course-grid" id="course-grid" aria-label="Lista de cursos" aria-live="polite"></div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="#inicio">
+          <span class="brand-mark">ED</span>
+          <span>Expedição Digital</span>
+        </a>
+        <p>
+          Projeto de Extensão desenvolvido por Rafaela Amaral, Guilherme Nunes e Luan Rocha alunos de Ciência da Computação
+          da Universidade Paulista - Paraíso.
+        </p>
+        <p>&copy; 2026 Expedição Digital. Todos os direitos autorais reservados.</p>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#modulos">Cursos</a>
+        <a href="cursos/basico.html">Começar agora</a>
+      </nav>
+    </footer>
+
+    <script src="courses-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
