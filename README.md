@@ -15,7 +15,6 @@ Os cursos estão organizados por tipo de aparelho e possuem sumário para facili
 ## Autores
 
 - Rafaela Amaral
-- Guilherme Nunes
 - Luan Rocha
 
 ## Licença
